@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diningえん - 静かな夜に灯る、和と洋の美しき一皿</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header id="header">
+        <div class="logo-container">
+            <!-- ロゴはお客様が後で挿入 -->
+            <h1 class="logo-text">dining<span class="logo-jp">えん</span></h1>
+        </div>
+        <nav id="nav-pc" class="nav-pc">
+            <ul>
+                <li><a href="#menu">メニュー</a></li>
+                <li><a href="#space">空間</a></li>
+                <li><a href="#story">ストーリー</a></li>
+                <li><a href="#access">アクセス</a></li>
+                <li><a href="#reservation" class="nav-reserve">予約</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- モバイルナビゲーション -->
+    <nav id="nav-mobile" class="nav-mobile">
+        <ul>
+            <li><a href="#menu">メニュー</a></li>
+            <li><a href="#space">空間</a></li>
+            <li><a href="#story">ストーリー</a></li>
+            <li><a href="#access">アクセス</a></li>
+            <li><a href="#reservation" class="nav-reserve">予約</a></li>
+        </ul>
+    </nav>
+
+    <!-- ファーストビュー -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2 class="catchphrase">静かな夜に灯る、和と洋の美しき一皿。</h2>
+            <p class="subcopy">そのひとときを、贅沢に、やさしく。</p>
+            <div class="cta-buttons">
+                <a href="#reservation" class="cta-button">空席を確認する</a>
+                <a href="#menu" class="cta-button secondary">メニューを見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンセプトセクション -->
+    <section id="concept" class="concept">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Concept</h2>
+            <div class="concept-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="concept-text">
+                    <h3 class="concept-subtitle">「えん」に込められた想い</h3>
+                    <p>「えん」という名前には、人と人との「縁」、円やかな「円」、宴の場としての「宴」という三つの意味を込めています。大切な方との時間を、穏やかに、そして豊かに過ごせる空間でありたいという願いから生まれた名前です。</p>
+                    <p>静かな住宅街の一角に灯る「diningえん」では、四季折々の厳選食材を使った創作和食と、こだわりの酒を通じて、上質な時間をお過ごしいただけます。</p>
+                    <p>木と紙、土と石といった自然素材を大切にした空間で、静かに流れる時間と共に、心に残る食体験をお届けします。</p>
+                </div>
+                <div class="chef-photo">
+                    <img src="./imges/A_beautifully_plated_Japanese_dish_of_aburi_shimes-1744520089253.png" alt="店内空間" class="chef-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- おすすめ料理セクション -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Recommended</h2>
+            <div class="dishes" data-aos="fade-up" data-aos-delay="200">
+                <div class="dish">
+                    <div class="dish-image">
+                        <img src="./imges/A_beautifully_plated_Japanese_dish_of_aburi_shimes-1744520089253.png" alt="炙り〆鯖のカルパッチョ">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">炙り〆鯖のカルパッチョ</h3>
+                        <p class="dish-caption">香る山葵ソースと共に</p>
+                        <p class="dish-description">玄界灘で獲れた新鮮な鯖を丁寧に〆て、表面を軽く炙ることで香ばしさを引き出しました。特製の山葵ソースが鯖の旨味をより一層引き立てます。</p>
+                        <a href="#" class="detail-link dish-modal-trigger" data-dish="dish1">詳細を見る</a>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-image">
+                        <img src="./imges/A_high-class_Japanese_style_private_room_with_a_tr-1744520094623.png" alt="季節の一汁三菜">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">季節の一汁三菜</h3>
+                        <p class="dish-caption">土と水の恵みを一皿に</p>
+                        <p class="dish-description">旬の野菜と地元の食材を使った日替わりの小鉢三種と椀物のセット。季節の移ろいを感じる一品です。</p>
+                        <a href="#" class="detail-link dish-modal-trigger" data-dish="dish2">詳細を見る</a>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-image">
+                        <img src="./imges/A_high-end_Japanese-style_izakaya_located_in_a_qu-1744520099579.png" alt="和牛の藁焼き">
+                    </div>
+                    <div class="dish-info">
+                        <h3 class="dish-name">和牛の藁焼き</h3>
+                        <p class="dish-caption">古の火入れ、現代に蘇る</p>
+                        <p class="dish-description">厳選された和牛を稲藁で焼き上げることで、独特の香りと柔らかさを引き出しました。藁の香りが肉の旨味と絶妙に調和します。</p>
+                        <a href="#" class="detail-link dish-modal-trigger" data-dish="dish3">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ドリンクセクション -->
+    <section id="drink" class="drink">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Drink</h2>
+            <div class="drink-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="drink-text">
+                    <h3 class="drink-subtitle">料理を引き立てる一杯</h3>
+                    <p>厳選した日本酒から世界のワインまで、料理の味わいを一層引き立てる飲み物をご用意しています。季節や気分に合わせて、ソムリエがペアリングをご提案いたします。</p>
+                    
+                    <div class="drink-categories">
+                        <div class="drink-category">
+                            <h4>地酒</h4>
+                            <p>各地の蔵元から直接仕入れる季節限定酒。冷酒から燗酒まで、その時の最適な温度でお楽しみいただけます。</p>
+                        </div>
+                        <div class="drink-category">
+                            <h4>和ワイン</h4>
+                            <p>日本各地で育まれたぶどうから造られた個性豊かなワイン。和食との相性を追求した厳選ボトルをご用意。</p>
+                        </div>
+                        <div class="drink-category">
+                            <h4>オリジナルカクテル</h4>
+                            <p>季節の果実や和素材を活かした「えん」だけのカクテル。ノンアルコールもご用意しています。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sommelier-comment">
+                        <p><em>「料理の味わいを豊かにし、会話を弾ませる一杯を。素材の個性を尊重した選りすぐりのお酒をご用意しています。」</em><br>— ソムリエ 藤村</p>
+                    </div>
+                </div>
+                <div class="drink-image">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/ac22945f-ef82-4e18-8d09-fe53699533d8_wm" alt="お酒のイメージ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 空間紹介 -->
+    <section id="space" class="space">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Space</h2>
+            <p class="space-lead" data-aos="fade-up" data-aos-delay="100">時間がゆっくり流れるような夜に</p>
+            
+            <div class="space-gallery" data-aos="fade-up" data-aos-delay="200">
+                <div class="space-item">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/ac22945f-ef82-4e18-8d09-fe53699533d8_wm" alt="木のカウンター">
+                    <div class="space-caption">
+                        <h3>木のカウンター</h3>
+                        <p>一枚板のカウンターで、職人の技を間近に</p>
+                    </div>
+                </div>
+                <div class="space-item">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/7c93221d-cfc1-431b-aa8d-6dfffc53aa38_wm" alt="個室風座敷">
+                    <div class="space-caption">
+                        <h3>個室風座敷</h3>
+                        <p>静かな会話が弾む、プライベート空間</p>
+                    </div>
+                </div>
+                <div class="space-item">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/f9f96edc-2343-4c6f-baa5-27c2eed7d940_wm" alt="夜の外観">
+                    <div class="space-caption">
+                        <h3>夜の外観</h3>
+                        <p>静かな住宅街に佇む、灯りの温もり</p>
+                    </div>
+                </div>
+                <div class="space-item">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/7c93221d-cfc1-431b-aa8d-6dfffc53aa38_wm" alt="テーブル席">
+                    <div class="space-caption">
+                        <h3>テーブル席</h3>
+                        <p>少人数でのお食事に最適な空間</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ストーリーセクション -->
+    <section id="story" class="story">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Story</h2>
+            
+            <div class="owner-story" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="story-subtitle">店主の想い</h3>
+                <div class="owner-content">
+                    <div class="owner-photo">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/7c93221d-cfc1-431b-aa8d-6dfffc53aa38_wm" alt="店主の写真">
+                    </div>
+                    <div class="owner-text">
+                        <p>「私が目指したのは、料理と空間に"間"を持たせた店です。忙しい日常から少し離れ、食事を通じて心に余白が生まれる場所を作りたいと考えました。」</p>
+                        <p>「diningえん」では、素材の持ち味を大切にしながらも、新しい驚きや発見がある創作和食を提供しています。季節の移ろいを感じ、五感で楽しむ食体験を通じて、お客様の大切な時間に寄り添いたいと思っています。</p>
+                        <p class="owner-name">— 店主 佐藤 宏樹</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="story-subtitle">お客様の声</h3>
+                <div class="review-items">
+                    <div class="review-item">
+                        <p class="review-text">「落ち着いた雰囲気の中で、繊細な和食を楽しめます。料理の一つ一つに店主の思いが感じられ、何度も訪れたくなる場所です。」</p>
+                        <p class="review-author">田中 美穂さん (48歳)</p>
+                    </div>
+                    <div class="review-item">
+                        <p class="review-text">「長年の友人との語らいに最適な場所を探していましたが、ここに出会えて本当に良かった。料理も素晴らしいが、何より時間が贅沢に流れる空間が素敵です。」</p>
+                        <p class="review-author">山田 康夫さん (67歳)</p>
+                    </div>
+                    <div class="review-item">
+                        <p class="review-text">「結婚記念日に利用しました。静かな環境で、二人だけの特別な時間を過ごせました。和と洋が融合した料理は新鮮で、驚きと喜びがありました。」</p>
+                        <p class="review-author">佐々木 涼子さん (42歳)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scenes" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="story-subtitle">ご利用シーン</h3>
+                <div class="scene-items">
+                    <div class="scene-item">
+                        <div class="scene-image">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/ac22945f-ef82-4e18-8d09-fe53699533d8_wm" alt="カップル記念日">
+                        </div>
+                        <div class="scene-info">
+                            <h4>カップル記念日</h4>
+                            <p>二人だけの静かな晩餐に</p>
+                        </div>
+                    </div>
+                    <div class="scene-item">
+                        <div class="scene-image">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/7c93221d-cfc1-431b-aa8d-6dfffc53aa38_wm" alt="女性友達と">
+                        </div>
+                        <div class="scene-info">
+                            <h4>女性友達と</h4>
+                            <p>大人の女子会、今夜は和で</p>
+                        </div>
+                    </div>
+                    <div class="scene-item">
+                        <div class="scene-image">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/ac22945f-ef82-4e18-8d09-fe53699533d8_wm" alt="一人で">
+                        </div>
+                        <div class="scene-info">
+                            <h4>一人で</h4>
+                            <p>一人の贅沢。灯の中でそっと</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">FAQ</h2>
+            
+            <div class="faq-items" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>予約は必要ですか？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>ご来店の際は予約をおすすめしております。特に金曜・土曜・祝前日は混み合いますので、お早めにご予約ください。当日のご予約も承っておりますので、お気軽にお電話またはLINEにてお問い合わせください。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>当日キャンセルは可能ですか？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>当日のキャンセルは、なるべく早めにご連絡をお願いいたします。当日2時間前を過ぎますとキャンセル料（お一人様2,000円）を頂戴しております。ご理解とご協力をお願いいたします。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>食物アレルギーには対応していますか？</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>食物アレルギーをお持ちのお客様には可能な限り対応いたします。ご予約時にお申し付けください。ただし、完全分離調理は行っておりませんので、重度のアレルギーをお持ちの方はその旨ご相談ください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- アクセス・店舗情報 -->
+    <section id="access" class="access">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Access</h2>
+            
+            <div class="access-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="access-map">
+                    <!-- Googleマップを仮で表示（後で実際のマップに置き換え） -->
+                    <div class="map-placeholder">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/f9f96edc-2343-4c6f-baa5-27c2eed7d940_wm" alt="地図">
+                    </div>
+                </div>
+                <div class="access-info">
+                    <div class="info-item">
+                        <h3>住所</h3>
+                        <p>〒XXX-XXXX<br>東京都XXX区XXX町X-X-X XXXビル 1F</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>アクセス</h3>
+                        <p>XXX駅 徒歩5分<br>静かな住宅街の中にあります</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>営業時間</h3>
+                        <p>17:30〜23:00（L.O. 22:00）<br>定休日：月曜日（祝日の場合は翌日）</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>お問い合わせ</h3>
+                        <p>TEL: 03-XXXX-XXXX</p>
+                    </div>
+                    <div class="info-item night-guide">
+                        <h3>夜の道案内</h3>
+                        <p>駅から当店までの道のりには、夜でも安心して歩ける明るい道を選んでお越しください。主要な曲がり角には行燈風の看板を設置しております。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 予約セクション -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Reservation</h2>
+            
+            <div class="reservation-content" data-aos="fade-up" data-aos-delay="200">
+                <p class="reservation-lead">ご予約は、お電話またはLINEにて承っております。<br>特別な日のお食事、大切な方とのひとときのために、ぜひお席をご用意させてください。</p>
+                
+                <div class="reservation-buttons">
+                    <a href="#" class="reservation-button line">LINEで予約</a>
+                    <a href="tel:03XXXXXXXX" class="reservation-button phone">今すぐ電話する</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 固定予約ボタン -->
+    <div class="fixed-reservation">
+        <a href="#reservation" class="fixed-button">ご予約はこちら</a>
+    </div>
+
+    <!-- フッター -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="logo-text">dining<span class="logo-jp">えん</span></h2>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#menu">メニュー</a></li>
+                        <li><a href="#space">空間</a></li>
+                        <li><a href="#story">ストーリー</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                        <li><a href="#reservation">予約</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <p>SNS</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LINE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 dining えん All Rights Reserved.</p>
+                <p class="policy-link"><a href="#">プライバシーポリシー</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- モーダル -->
+    <div id="dish-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-dish-content">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
